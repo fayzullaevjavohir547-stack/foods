@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TASTY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar__row">
+        <div class="brand">
+          <div class="brand__logo">TASTY</div>
+        </div>
+
+        <nav class="nav">
+          <a class="nav__link is-active" href="#home">Home</a>
+          <a class="nav__link" href="#menu">Menu</a>
+          <a class="nav__link" href="#service">Service</a>
+        </nav>
+
+        <div class="topbar__actions">
+          <button class="btn btn--ghost">Register</button>
+          <button class="btn btn--solid">Login</button>
+
+          <button class="burger" aria-label="Open menu" id="burgerBtn">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mnav" id="mnav">
+      <a class="mnav__link" href="#home">Home</a>
+      <a class="mnav__link" href="#menu">Menu</a>
+      <a class="mnav__link" href="#service">Service</a>
+      <div class="mnav__buttons">
+        <button class="btn btn--ghost btn--full">Register</button>
+        <button class="btn btn--solid btn--full">Login</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__left">
+            <div class="hero__kicker">TASTY</div>
+
+            <h1 class="hero__title">
+              <span class="hero__accent">Meat ,</span> Eat &amp; Enjoy<br/>
+              the true taste
+            </h1>
+
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet consectetur. Maecenas enim euismod
+              mus purus bibendum metus.
+            </p>
+
+            <div class="hero__cta">
+              <button class="btn btn--solid btn--lg">SEE MORE</button>
+            </div>
+
+            <div class="hero__search">
+              <div class="search">
+                <span class="search__icon">🔎</span>
+                <input id="searchInput" class="search__input" placeholder="Search..." />
+              </div>
+              <button class="btn btn--solid btn--square" id="searchBtn" title="Search">→</button>
+            </div>
+
+            <div class="hero__social">
+              <a class="ico" href="#" aria-label="Instagram">◎</a>
+              <a class="ico" href="#" aria-label="Facebook">f</a>
+              <a class="ico" href="#" aria-label="Twitter">𝕏</a>
+            </div>
+          </div>
+
+          <div class="hero__right">
+            <div class="plate">
+              <div class="plate__ring"></div>
+              <div class="plate__ring plate__ring--dashed"></div>
+
+              <div class="plate__main">
+
+                <img
+                  src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop"
+                  alt="Food"
+                />
+              </div>
+
+              <div class="plate__float plate__float--a">
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=400&auto=format&fit=crop" alt="">
+              </div>
+              <div class="plate__float plate__float--b">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=400&auto=format&fit=crop" alt="">
+              </div>
+              <div class="plate__float plate__float--c">
+                <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=400&auto=format&fit=crop" alt="">
+              </div>
+            </div>
+
+            <div class="hero__decor hero__decor--herb"></div>
+            <div class="hero__decor hero__decor--tomato"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Menu Categories</h2>
+          <a class="section__link" href="#products">See all</a>
+        </div>
+
+        <div class="cats" id="cats"></div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Our Suggest</h2>
+            <p class="section__sub">
+              Lorem ipsum dolor sit amet consectetur. Maecenas nunc
+            </p>
+          </div>
+        </div>
+
+        <div class="grid" id="productsGrid"></div>
+
+        <div class="center">
+          <a class="btn btn--ghost btn--pill" href="#faq">See all</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="service">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Why Us?</h2>
+        </div>
+
+        <div class="why">
+          <div class="why__card">
+            <div class="why__pill">Lorem ipsum dolor sit amet consectetur. Dolor vel euismod mus purus bibendum. Donec imperdiet non netus velit.</div>
+
+            <div class="testis">
+              <div class="testi">
+                <div class="avatar"></div>
+                <div class="testi__body">
+                  <div class="testi__name">user name</div>
+                  <div class="testi__text">Lorem ipsum dolor sit amet consec</div>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+
+              <div class="testi">
+                <div class="avatar"></div>
+                <div class="testi__body">
+                  <div class="testi__name">user name</div>
+                  <div class="testi__text">Lorem ipsum dolor sit amet consec tetur. Dolor vel euismod mus purus bibendum. Donec.</div>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="why__admin">
+            <div class="admin__bubble">
+              <div class="admin__icon">👤</div>
+              <div class="admin__label">Admin</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">FAQ</h2>
+        </div>
+
+        <div class="faq">
+          <button class="faq__item" type="button">
+            <span>Lorem ipsum dolor sit amet consectetur. Sagittis...</span>
+            <i class="faq__chev">▾</i>
+          </button>
+          <div class="faq__panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, alias.</p>
+          </div>
+
+          <button class="faq__item" type="button">
+            <span>Lorem ipsum dolor sit amet consectetur. Sagittis...</span>
+            <i class="faq__chev">▾</i>
+          </button>
+          <div class="faq__panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, pariatur.</p>
+          </div>
+
+          <button class="faq__item" type="button">
+            <span>Lorem ipsum dolor sit amet consectetur. Sagittis...</span>
+            <i class="faq__chev">▾</i>
+          </button>
+          <div class="faq__panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, rerum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">About Us</h2>
+        </div>
+
+        <p class="about">
+          Lorem ipsum dolor sit amet consectetur. Quam tincidunt convallis sit eget.
+          Sed mi dictumst risus morbi ornare consectetur. Arcu amet sed ut suspendisse.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__cta">
+          <div class="footer__left">
+            <div class="footer__line">get the <b>Best &amp; Tasty</b> Foods</div>
+            <div class="footer__line">with High Quality</div>
+            <button class="btn btn--solid btn--pill btn--white">Order Now</button>
+          </div>
+
+          <div class="footer__stores">
+            <div class="store">Google Play</div>
+            <div class="store">App Store</div>
+          </div>
+
+          <div class="footer__social">
+            <span class="mini">◎</span>
+            <span class="mini">f</span>
+            <span class="mini">𝕏</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+
+  <script src="./food.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
