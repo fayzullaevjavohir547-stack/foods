@@ -1,264 +1,209 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TASTY</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css" />
+<meta charset="UTF-8">
+<title>Tasty</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style (1).css">
 </head>
 <body>
+<header>
+    <div class="logo">TASTY</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Service</a>
+    </nav>
+    <div class="auth">
+        <button class="register">Register</button>
+        <button class="login">Login</button>
+    </div>
+    <div class="cart">🛒 Total: <span id="totalPrice">0</span> $</div>
+</header>
 
-  <header class="topbar">
-    <div class="container">
-      <div class="topbar__row">
-        <div class="brand">
-          <div class="brand__logo">TASTY</div>
+<section class="hero">
+    <div class="text">
+        <h1><span>Meat , Eat & Enjoy</span><br>the true taste</h1>
+        <p>Lorem ipsum dolor sit amet consectetur. Maecenas nunc amet sollicitudin odio purus dictumst mauris enim</p>
+        <button>SEE MORE</button>
+
+        <div class="search">
+            <input type="text" placeholder="Search Food...">
         </div>
 
-        <nav class="nav">
-          <a class="nav__link is-active" href="#home">Home</a>
-          <a class="nav__link" href="#menu">Menu</a>
-          <a class="nav__link" href="#service">Service</a>
-        </nav>
+        <div class="social">
+            <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+        </div>
+    </div>
 
-        <div class="topbar__actions">
-          <button class="btn btn--ghost">Register</button>
-          <button class="btn btn--solid">Login</button>
+    <div class="image-area">
+        <div class="big-circle">
+            <img src="img/big salat.png" alt="Salad">
+        </div>
 
-          <button class="burger" aria-label="Open menu" id="burgerBtn">
-            <span></span><span></span><span></span>
-          </button>
+        
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <img src="img/google-play-badge.svg" alt="Google Play badge" class="footer-badge">
+    </div>
+
+    <div class="footer-center">
+      <a href="#"><img src="img/instagram.png" alt="ig" class="social-icon"></a>
+      <a href="#"><img src="img/facebook.png" alt="fb" class="social-icon"></a>
+      <a href="#"><img src="img/twitter.png" alt="tw" class="social-icon"></a>
+    </div>
+
+    <div class="footer-right">
+      <img src="img/app-store-badge.svg" alt="App Store badge" class="footer-badge">
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<section class="wrap">
+
+  <div class="top">
+    <h2>Menu Categories</h2>
+    <span>Sort 1-10</span>
+  </div>
+
+  
+  <div class="grid">
+
+    <div class="card">
+      <span class="sale">30%</span>
+      <img src="img/salad1.png">
+      <div class="info">
+        <div class="rate">⭐ 5.9 <span>+100 review</span></div>
+        <h4>Salad</h4>
+        <p>Made with juicy beef burger, cheese...</p>
+        <div class="price">
+          <s>9.20 $</s><b>6.44 $</b>
         </div>
       </div>
     </div>
 
-    <div class="mnav" id="mnav">
-      <a class="mnav__link" href="#home">Home</a>
-      <a class="mnav__link" href="#menu">Menu</a>
-      <a class="mnav__link" href="#service">Service</a>
-      <div class="mnav__buttons">
-        <button class="btn btn--ghost btn--full">Register</button>
-        <button class="btn btn--solid btn--full">Login</button>
+    <div class="card">
+      <span class="sale">10%</span>
+      <img src="img/burger1.png">
+      <div class="info">
+        <div class="rate">⭐ 7.5 <span>+100 review</span></div>
+        <h4>Burger</h4>
+        <p>Made with juicy beef burger, cheese...</p>
+        <div class="price">
+          <s>10.70 $</s><b>9.63 $</b>
+        </div>
       </div>
     </div>
-  </header>
 
+    <div class="card">
+      <span class="sale">15%</span>
+      <img src="img/potato1.png">
+      <div class="info">
+        <div class="rate">⭐ 5.7 <span>+100 review</span></div>
+        <h4>Potato</h4>
+        <p>Made with juicy beef burger, cheese...</p>
+        <div class="price">
+          <s>8.40 $</s><b>7.20 $</b>
+        </div>
+      </div>
+    </div>
 
-  <main id="home">
-    <section class="hero">
-      <div class="container">
-        <div class="hero__grid">
-          <div class="hero__left">
-            <div class="hero__kicker">TASTY</div>
+    <div class="card">
+      <span class="sale">10%</span>
+      <img src="img/potato2.png">
+      <div class="info">
+        <div class="rate">⭐ 4.8 <span>+100 review</span></div>
+        <h4>Potato</h4>
+        <p>Made with juicy beef burger, cheese...</p>
+        <div class="price">
+          <s>8.50 $</s><b>7.5 $</b>
+        </div>
+      </div>
+    </div>
 
-            <h1 class="hero__title">
-              <span class="hero__accent">Meat ,</span> Eat &amp; Enjoy<br/>
-              the true taste
-            </h1>
+    <div class="card">
+      <span class="sale">15%</span>
+      <img src="img/salad2.png">
+      <div class="info">
+        <div class="rate">⭐ 7.8 <span>+100 review</span></div>
+        <h4>Salad</h4>
+        <p>Made with juicy beef burger, cheese...</p>
+        <div class="price">
+          <s>9.20 $</s><b>8.5 $</b>
+        </div>
+      </div>
+    </div>
 
-            <p class="hero__text">
-              Lorem ipsum dolor sit amet consectetur. Maecenas enim euismod
-              mus purus bibendum metus.
-            </p>
+  </div>
 
-            <div class="hero__cta">
-              <button class="btn btn--solid btn--lg">SEE MORE</button>
-            </div>
+  <div class="see">See all</div>
 
-            <div class="hero__search">
-              <div class="search">
-                <span class="search__icon">🔎</span>
-                <input id="searchInput" class="search__input" placeholder="Search..." />
-              </div>
-              <button class="btn btn--solid btn--square" id="searchBtn" title="Search">→</button>
-            </div>
+</section>
 
-            <div class="hero__social">
-              <a class="ico" href="#" aria-label="Instagram">◎</a>
-              <a class="ico" href="#" aria-label="Facebook">f</a>
-              <a class="ico" href="#" aria-label="Twitter">𝕏</a>
-            </div>
+<section class="why-wrap">
+  <div class="why-inner">
+    <div class="why-left">
+      <img src="img/burgers.png" alt="Big burger" class="why-image">
+    </div>
+
+    <div class="why-right">
+      <h2>Why Us?</h2>
+
+      <div class="testimonials">
+        <div class="bubble bubble-admin">
+          <div class="bubble-text">Lorem ipsum dolor sit amet consectetur. Dolor vel euismod mus purus bibendum. Donec imperdiet non netus velit.</div>
+          <div class="bubble-meta">Admin</div>
+        </div>
+
+        <div class="review-row">
+          <img src="img/salad1.png" class="avatar" alt="user">
+          <div class="bubble bubble-green">
+            <div class="bubble-text">Lorem ipsum dolor sit amet consec tetur. Dolor vel euismod.</div>
+            <div class="stars">★★★★★ <span>(15)</span></div>
           </div>
+        </div>
 
-          <div class="hero__right">
-            <div class="plate">
-              <div class="plate__ring"></div>
-              <div class="plate__ring plate__ring--dashed"></div>
-
-              <div class="plate__main">
-
-                <img
-                  src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop"
-                  alt="Food"
-                />
-              </div>
-
-              <div class="plate__float plate__float--a">
-                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=400&auto=format&fit=crop" alt="">
-              </div>
-              <div class="plate__float plate__float--b">
-                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=400&auto=format&fit=crop" alt="">
-              </div>
-              <div class="plate__float plate__float--c">
-                <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=400&auto=format&fit=crop" alt="">
-              </div>
-            </div>
-
-            <div class="hero__decor hero__decor--herb"></div>
-            <div class="hero__decor hero__decor--tomato"></div>
+        <div class="review-row">
+          <img src="img/burger1.png" class="avatar" alt="user">
+          <div class="bubble bubble-green">
+            <div class="bubble-text">Lorem ipsum dolor sit amet consec tetur. Dolor vel euismod mus purus bibendum. Donec.</div>
+            <div class="stars">★★★★☆ <span>(10)</span></div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="section" id="menu">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title">Menu Categories</h2>
-          <a class="section__link" href="#products">See all</a>
-        </div>
-
-        <div class="cats" id="cats"></div>
+      <h3 class="faq-title">FAQ</h3>
+      <div class="faq">
+        <div class="faq-item">Lorem ipsum dolor sit amet consectetur. Sagittis egestas commodo ? <span class="arrow">▾</span></div>
+        <div class="faq-item">Lorem ipsum dolor sit amet consectetur. Sagittis egestas commodo ? <span class="arrow">▾</span></div>
+        <div class="faq-item">Lorem ipsum dolor sit amet consectetur. Sagittis egestas commodo ? <span class="arrow">▾</span></div>
       </div>
-    </section>
 
-    <section class="section" id="products">
-      <div class="container">
-        <div class="section__head">
-          <div>
-            <h2 class="section__title">Our Suggest</h2>
-            <p class="section__sub">
-              Lorem ipsum dolor sit amet consectetur. Maecenas nunc
-            </p>
-          </div>
-        </div>
+      <h3 class="about-title">About Us</h3>
+      <p class="about-text">Lorem ipsum dolor sit amet consectetur. Quam tincidunt convallis sit eget. Sed mi dictumst risus morbi ornare consequat donec. Arcu amet sed ut suspendisse.</p>
+    </div>
+  </div>
+</section>
 
-        <div class="grid" id="productsGrid"></div>
+<section class="cta">
+  <div class="cta-inner">
+    <h2>get the <span class="cta-strong">Best &amp; Tasty</span> Foods</h2>
+    <p>with Hight Quality</p>
+    <button class="cta-btn">Order Now</button>
+  </div>
+  <div class="cta-badges">
+    <img src="img/google-play-badge.svg" alt="Google Play"/>
+    <img src="img/app-store-badge.svg" alt="App Store"/>
+  </div>
+</section>
 
-        <div class="center">
-          <a class="btn btn--ghost btn--pill" href="#faq">See all</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="service">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title">Why Us?</h2>
-        </div>
-
-        <div class="why">
-          <div class="why__card">
-            <div class="why__pill">Lorem ipsum dolor sit amet consectetur. Dolor vel euismod mus purus bibendum. Donec imperdiet non netus velit.</div>
-
-            <div class="testis">
-              <div class="testi">
-                <div class="avatar"></div>
-                <div class="testi__body">
-                  <div class="testi__name">user name</div>
-                  <div class="testi__text">Lorem ipsum dolor sit amet consec</div>
-                </div>
-                <div class="stars">★★★★★</div>
-              </div>
-
-              <div class="testi">
-                <div class="avatar"></div>
-                <div class="testi__body">
-                  <div class="testi__name">user name</div>
-                  <div class="testi__text">Lorem ipsum dolor sit amet consec tetur. Dolor vel euismod mus purus bibendum. Donec.</div>
-                </div>
-                <div class="stars">★★★★★</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="why__admin">
-            <div class="admin__bubble">
-              <div class="admin__icon">👤</div>
-              <div class="admin__label">Admin</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section" id="faq">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title">FAQ</h2>
-        </div>
-
-        <div class="faq">
-          <button class="faq__item" type="button">
-            <span>Lorem ipsum dolor sit amet consectetur. Sagittis...</span>
-            <i class="faq__chev">▾</i>
-          </button>
-          <div class="faq__panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, alias.</p>
-          </div>
-
-          <button class="faq__item" type="button">
-            <span>Lorem ipsum dolor sit amet consectetur. Sagittis...</span>
-            <i class="faq__chev">▾</i>
-          </button>
-          <div class="faq__panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, pariatur.</p>
-          </div>
-
-          <button class="faq__item" type="button">
-            <span>Lorem ipsum dolor sit amet consectetur. Sagittis...</span>
-            <i class="faq__chev">▾</i>
-          </button>
-          <div class="faq__panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, rerum.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--tight" id="about">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title">About Us</h2>
-        </div>
-
-        <p class="about">
-          Lorem ipsum dolor sit amet consectetur. Quam tincidunt convallis sit eget.
-          Sed mi dictumst risus morbi ornare consectetur. Arcu amet sed ut suspendisse.
-        </p>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__cta">
-          <div class="footer__left">
-            <div class="footer__line">get the <b>Best &amp; Tasty</b> Foods</div>
-            <div class="footer__line">with High Quality</div>
-            <button class="btn btn--solid btn--pill btn--white">Order Now</button>
-          </div>
-
-          <div class="footer__stores">
-            <div class="store">Google Play</div>
-            <div class="store">App Store</div>
-          </div>
-
-          <div class="footer__social">
-            <span class="mini">◎</span>
-            <span class="mini">f</span>
-            <span class="mini">𝕏</span>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </main>
-
-
-  <script src="./food.js"></script>
-  <script src="./app.js"></script>
 </body>
 </html>
